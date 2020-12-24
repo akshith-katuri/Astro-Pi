@@ -15,16 +15,6 @@ from skimage.filters import threshold_otsu
 from skimage.feature import canny
 import numpy as np
 
-# earth_pic_pillow = Image.open("zz_astropi_1_photo_170.jpg")
-
-# im_a = Image.new("L", earth_pic_pillow.size, 0)
-# draw = ImageDraw.Draw(im_a)
-# draw.ellipse((139, 826, 2420, 965), fill=255)
-
-# earth_pic_pillow_copy = earth_pic_pillow.copy()
-# earth_pic_pillow_copy.putalpha(im_a)
-# earth_pic_pillow_crop = earth_pic_pillow_copy.crop((139, 826, 2420, 965))
-# earth_pic_pillow_crop.save('zz_astropi_1_photo_170.png')
 def percent_cloud(file):
     earth_pic = io.imread(file)
     earth_pic_grey = color.rgb2gray(earth_pic)
